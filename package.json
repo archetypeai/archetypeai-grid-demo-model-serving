@@ -1,5 +1,5 @@
 {
-	"name": "archetypeai-grid-demo-model-serving",
+	"name": "archetypeai-grid-demo-inference-api",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",

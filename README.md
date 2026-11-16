@@ -32,8 +32,8 @@ This is the Inference API version of [archetypeai-grid-demo](https://github.com/
 Requires Node.js 20 or later:
 
 ```bash
-git clone https://github.com/archetypeai/archetypeai-grid-demo-model-serving.git
-cd archetypeai-grid-demo-model-serving
+git clone https://github.com/archetypeai/archetypeai-grid-demo-inference-api.git
+cd archetypeai-grid-demo-inference-api
 npm install
 cp .env.example .env      # then add your API key
 ```

@@ -7,7 +7,7 @@ All measurements below were taken on production on 2026-11-14.
 ## Summary
 
 - **Endpoint:** every call is `POST /api/inference/query` on `newton-c-2.6`, text only, with the system turn in `system_prompt`.
-- **Shorter answers:** the Inference API stops a query after about 58 seconds and generates more slowly than Direct Query did. With the original prompt and its 3,072-token budget, answers ran longer than on Direct Query (a median of 743 words against 481) and two of 24 timed out (`504 query_timeout`). The prompt now asks for answers under 300 words, `max_new_tokens` is 1,536, and `repetition_penalty` is 1.1, as in the [earthquake demo](https://github.com/archetypeai/archetypeai-earthquake-demo-model-serving), where the model looped while listing numbers.
+- **Shorter answers:** the Inference API stops a query after about 58 seconds and generates more slowly than Direct Query did. With the original prompt and its 3,072-token budget, answers ran longer than on Direct Query (a median of 743 words against 481) and two of 24 timed out (`504 query_timeout`). The prompt now asks for answers under 300 words, `max_new_tokens` is 1,536, and `repetition_penalty` is 1.1, as in the [earthquake demo](https://github.com/archetypeai/archetypeai-earthquake-demo-inference-api), where the model looped while listing numbers.
 - **Faster:** a median of 8 s per answer instead of 10 s on the example questions, and 12 s instead of 17 s on the quick prompts, with no timeouts. See [Results](#results).
 - **Open-source fonts:** Geist and Geist Mono replace the design system's PP Neue Montreal, whose files can't be redistributed.
 
